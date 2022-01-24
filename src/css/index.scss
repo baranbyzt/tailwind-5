@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.header_1{
+    background-image: url("../img/simple-house-01.jpg");
+}
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+.person{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 5px;
+}
+@layer components{
+
+body,html{
+    @apply h-full w-full bg-gray-300;
+}
+.wrapper{
+    @apply w-full  xl:w-4/5 mx-auto h-full ;
+}
+
+// header-1 section is start
+.header_1{
+    @apply h-3/5 w-full 
+    bg-center relative
+    bg-no-repeat
+    bg-cover;
+
+    .icon_banner {
+@apply flex justify-center items-center 
+    w-3/5 absolute bottom-10 left-0 xl:-left-60;
+
+    p{
+        @apply text-white;
+    }
+    .icon_banner_p_1{
+@apply text-3xl;
+    }
+    .icon_banner_p_2{
+@apply text-lg;
+    }
+    }
+   .menu{
+@apply absolute right-10 bottom-10; 
+   
+ul{
+    @apply flex justify-start items-center;
+
+    li{
+        @apply p-3 pl-6  text-xl font-normal
+        text-white;
+    }
+    .main_section{
+        @apply underline underline-offset-4;
+    }
+}
+    } 
+
+}
+// header-1 section is end 
+
+// header-2 section is start
+.header_2{
+
+    .header_2_inner_p_1{
+@apply text-center text-4xl font-bold mt-20;
+    }
+    .header_2_inner_p_2{
+        @apply text-center my-10 w-2/3 mx-auto text-gray-700 text-lg;
+    }
+}
+// header-2 section is end 
+
+
+// header_3 section is start
+.header_3{
+@apply grid grid-cols-1 md:grid-cols-2 gap-4 
+w-4/5 mx-auto;
+
+.inner_forum{
+    @apply mr-auto ml-auto bg-blue-600 ;
+}
+input{
+    @apply   w-1/2 h-10 bg-white text-black m-2 rounded-3xl 
+    pl-10 ml-20  border-2 border-black;
+}
+.button_send{
+    @apply w-1/2 bg-black text-white rounded-xl
+    h-10 mx-auto flex justify-center items-center text-xl mb-5;
+}
+.first-input{
+    @apply mt-20;
+}
+.input_message{
+    @apply h-20 mb-20;
+}
+.header_3_section_2{
+@apply  p-10 mt-10;
+}
+.header_3_special_p_1{
+@apply text-3xl ;
+}
+.header_3_special_p_2{
+@apply text-lg my-5;
+}
+.phone3{
+    @apply   mt-5;
+}
+.email_3{
+    @apply mb-20 mt-1;
+}
+.bottom_icons{
+@apply flex justify-center items-center;
+
+i{
+    @apply font-bold m-5 text-3xl text-zinc-600
+    cursor-pointer;
+}
+}
+
+}
+// header_3 section is end
+
+
+// header_4 section is start
+.header_4{
+    @apply w-full mx-auto my-10;
+}
+// header_5 section is end
+
+.section_1{
+    @apply grid grid-cols-1 gap-4 lg:grid-cols-2 w-full my-10 mx-auto;
+
+    .person{
+@apply  flex justify-between items-center  relative;
+
+div{
+    @apply absolute left-60;
+}
+    }
+
+
+    .person_2{
+@apply text-xl;
+    }
+    .person_1{
+        @apply text-3xl;
+    }
+    .person_3{
+@apply mt-5 ;
+    }
+}
+
+// section-2 is start
+.section_2{
+@apply grid grid-cols-1 gap-5 lg:grid-cols-3 mx-auto my-10 
+w-4/5;
+
+.i_wrapper{
+    @apply w-full flex justify-center items-center mt-10;
+}
+i{
+    @apply text-8xl;
+}
+p{
+    @apply text-center w-4/5 mx-auto my-5 p-3;
+}
+
+.section_2_inner_1{
+
+}
+.section_2_inner_2{
+
+}
+.section_2_inner_3{
+
+}
+.button_section_2_1{
+    @apply bg-black text-white rounded-2xl;
+}
+
+.button_section_2_2{
+    @apply bg-yellow-500 text-black rounded-2xl;
+}
+
+.button_section_2_3{
+    @apply bg-blue-600 text-white rounded-2xl;
+}
+
+}
+// section-2 is end
+
+.bottom_sectiongs{
+
+@apply pt-0;
+    h1{
+@apply text-3xl text-blue-500;
+    }
+    p{
+        @apply text-lg ;
+    }
+}
+
+
+.index_main_section{
+    @apply w-full mx-auto grid gap-3 grid-cols-1
+    md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+}
+
+
+.main_item_1{
+@apply p-3;
+
+img{
+    @apply mx-auto;
+}}
+
+.main_p_1{
+@apply m-2 ml-10 text-3xl ;
+}
+.main_p_2{
+@apply  w-4/5 mx-auto;
+}
+.main_p_3{
+@apply  mx-auto ml-10 text-2xl text-orange-800 m-5; 
+}
+
+}
+
+
